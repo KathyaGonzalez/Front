@@ -1,0 +1,186 @@
+/*Banner degradado*/
+.banner{
+    background: linear-gradient(var(--oscuro), var(--claro));
+    margin-top: 2vh;
+}
+
+.containerDoble{
+    grid-template-columns: 60% 40%;
+}
+
+.containerDoble, .containerDobleSegundo, .containerDobleTercero{
+    border-color: var(--borde);
+    border-radius: 10px;
+    border-style: ridge;
+    border-width: 1px;
+    margin: 2%;
+}
+
+.containerDoble .columna2 img{
+    height: 100%;
+}
+
+.containerDoble .columna2 img{
+    width: 100%;
+}
+
+.containerDoble, .containerDobleSegundo, .containerDobleTercero{
+    font-size: calc(1vw + .5rem);
+}
+
+.containerDoble, .containerDobleSegundo, .containerDobleTercero, .containerDobleSegundo .columnaNo2 .lenguajes, .containerDobleSegundo .columnaNo2 .lenguajes .lenguaje, 
+.containerDobleSegundo .columnaNo2 .gestores, .imagenes{
+    display: grid;
+}
+
+.containerDobleSegundo{
+    align-content: center;
+    column-gap: 5%;
+    grid-template-columns: 50% 40%;
+}
+
+.containerDobleSegundo .columnaNo2 .lenguajes .lenguaje, .containerDobleTercero{
+    grid-template-columns: 50% 50%; 
+}
+
+.containerDobleSegundo .columnaNo2 .lenguajes{
+    column-gap: 10%;
+    grid-template-columns: 45% 45%;
+    row-gap: 1%;
+}
+
+.containerDobleSegundo .columnaNo2 .gestores, .imagenes{
+    justify-items: center;
+}
+
+.containerDobleSegundo .columnaNo2 .gestores{
+    grid-template-columns: 30% 70%;
+    grid-template-rows: repeat(2, 37%);
+}
+
+.containerDobleSegundo, .containerDobleTercero{
+    text-align: center;
+}
+
+.columna1 .texto p:nth-child(2n), .encabezado b:nth-child(2n){
+    color: var(--subtitulo);
+}
+
+.titulo span, .descripcion span{
+    display: flex;
+}
+
+.navbar{
+    justify-content: flex-end;
+}
+
+.containerDoble, .containerDobleSegundo{
+    padding: 1%;
+}
+
+.imagenes{
+    align-items: center;
+}
+
+.letras img{
+    width: 70%;
+}
+
+.titulo span, .descripcion span{
+    justify-content: center;
+}
+
+.encabezado b:first-child, .columna1 .texto p:first-child{
+    color: var(--oscuro);
+}
+
+
+.texto ul li{
+    list-style: decimal;
+}
+
+/*Título sección*/
+.titulo{
+    font-size: calc(1.5vw + .5rem);
+}
+
+.titulo, .containerDobleTercero{
+    padding: 2%;
+}
+
+/*Estilo texto dentro de Banner*/
+.titulo span, .descripcion span{
+    align-self: center;
+    color: white;
+    font-style: italic;
+}
+
+
+.containerDobleSegundo .columnaNo2 .lenguajes .lenguaje svg, .containerDobleSegundo .columnaNo2 .gestores svg{
+    height: 9vh;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.containerDoble .columna2 img, .containerDobleSegundo .columnaNo1 .graficas{
+    display: flex;
+    align-content: space-around;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.ilustracionContainer{
+    width: 50vw;
+}
+
+@media screen and (max-width:480px) {
+    .ilustracionContainer{
+        height: 30vh;
+    }
+
+    .ilustracionCertificado{
+        width: 30vw;
+        height: 60vh;
+    }
+    
+    .lenguaje p {
+        font-size: 2vw;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width:768px) {
+    .ilustracionContainer{
+        height: 40vh;
+    }
+
+    .ilustracionCertificado{
+        width: 30vw;
+        height: 50vh;
+    }
+
+    .lenguaje p {
+        font-size: 1.5vw;
+    }
+}
+
+@media screen and  (min-width:768px) and (max-width:1024px) {
+    .ilustracionContainer{
+        height: 50vh;
+    }
+
+    .ilustracionCertificado{
+        width: 30vw;
+        height: 45vh;
+    }
+}
+
+@media screen and (min-width:1024px){
+    .ilustracionContainer{
+        height: 60vh;
+    }
+
+    .ilustracionCertificado{
+        width: 30vw;
+        height: 70vh;
+    }
+}

@@ -1,0 +1,182 @@
+/*Banner degradado*/
+.banner{
+    background: linear-gradient(var(--oscuro), var(--claro));
+    margin-top: 2vh;
+}
+
+/*Contenedor inicial doble*/
+.contenedorDoble{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 2%;
+}
+
+/*Título de las tarjetas */
+
+.ilustracion {
+    display: flex;
+    margin-right: 10%;
+}
+
+/*Contenido de la tarjeta*/
+.informacion{
+    background: rgba(158, 28, 191, 0.5);
+    bottom: -10%;
+    color: white;
+    height: 20%;
+    padding: 2%;
+    position: absolute;
+    transition: 0.5s;
+}
+
+.introduccion{
+    display: flex;
+    font-size: calc(1vw + .5rem);
+    text-align: center;
+}
+
+/*Sección Proyectos*/
+.proyectos{
+    align-items: center;
+    background: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/*Tarjeta por proyecto*/
+.tarjeta{
+    border-radius: 3%;
+    box-shadow: 10px 10px 20px gray;
+    margin: 2%;
+    overflow: hidden;
+    position: relative;
+}
+
+/*Vista inicial de la tarjeta*/
+.tarjeta img{
+    border-radius: 3%;
+    transition: 0.5s;
+    width: 100%;
+}
+
+/*Vista al pasar el cursor por la tarjeta*/
+.tarjeta:hover {
+    cursor: pointer;
+}
+
+.tarjeta:hover .informacion{
+    background: rgba(166, 68, 190, 0.9);
+    bottom: -10%;
+    height: 70%;
+    overflow-y: scroll;
+    scrollbar-color: var(--barra) var(--scrool);
+    scrollbar-width: thin;
+}
+
+.tarjeta:hover .informacion::-webkit-scrollbar {
+    background: var(--scrool);
+    width: 20px;
+}
+
+.tarjeta:hover .informacion::-webkit-scrollbar-thumb {
+    background: var(--barra);
+    -webkit-border-radius: 1ex;
+}
+
+.tarjeta:hover p, .tarjeta:hover a{
+    opacity: 1;
+    visibility: visible;
+}
+
+.tarjeta:hover img{
+    transform: scale(1.1) rotateY(-3deg);
+}
+
+/*Título sección*/
+.titulo{
+    font-size: calc(1.5vw + .5rem);
+    padding: 2%;
+}
+
+/*Estilo texto dentro de Banner*/
+.titulo span{
+    align-self: center;
+    color: white;
+    display: flex;
+    font-style: italic;
+    justify-content: center;
+}
+
+.tituloTarjeta{
+    font-size: calc(0.8vw + .5rem);
+}
+
+/*Texto de las tarjetas*/
+.parrafo{
+    font-size: calc(0.7vw + .5rem);
+    margin: 2%;
+}
+
+@media screen and (max-width:480px) {
+    .tarjeta{
+        width: 80%;
+    }
+
+    .introduccion{
+        width: 100%;
+    }
+
+    .ilustracionPrincipal{
+        width: 80vw;
+        height: 30vh;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width:768px) {
+    .tarjeta{
+        width: 70%;
+    }
+
+    .introduccion{
+        width: 90%;
+    }
+
+    .ilustracionPrincipal{
+        width: 70vw;
+        height: 40vh;
+    }
+}
+
+@media screen and  (min-width:768px) and (max-width:1024px) {
+    .tarjeta{
+        width: 50%;
+    }
+
+    .introduccion{
+        width: 80%;
+    }
+    
+    .ilustracionPrincipal{
+        width: 50vw;
+        height: 50vh;
+    }
+}
+
+@media screen and (min-width:1024px){
+    .tarjeta{
+        width: 30%;
+    }
+
+    .introduccion{
+        width: 50%;
+        padding-top: 5%;
+    }
+
+    .ilustracionPrincipal{
+        width: 30vw;
+        height: 40vh;
+    }
+}

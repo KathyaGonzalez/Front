@@ -1,0 +1,40 @@
+header {
+  background-color: white;
+  position: sticky;
+}
+
+body {
+  --barra: rgba(201, 82, 231, 0.6);
+  --claro: #DF95FE;
+  --medio: #BE76FE;
+  --oscuro: #9F35FD;
+  --subtitulo: #EA8EE0;
+  --borde: #C177FE;
+  --scrool: rgba(231, 182, 218, 0.7);
+  --tarjeta: #e5dfe7;
+  font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/*Pie de página*/
+footer{
+  background-color: var(--medio);
+  display: flex;
+  justify-content: flex-end;
+  padding: 1%;
+}
+
+header {
+  background-color: white;
+  position: sticky;
+}
+
+hr{
+  color: var(--medio);
+}
+
+/*Título de las tarjetas */
+h1{
+  font-size: 1.2vw;
+  margin-bottom: 5%;
+}

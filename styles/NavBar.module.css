@@ -1,0 +1,48 @@
+/*Menú principal*/
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1%;
+}
+
+.navbar li{
+    font-display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-right: 1%;
+}
+
+.navbar li a{
+    color: black;
+    display: flex;
+    font-size: 2.4vw;
+    justify-self: center;
+    position: relative;
+    text-decoration: none;
+}
+
+.navbar li a:hover{
+    color: var(--oscuro);
+}
+
+.navbar li a::after{
+    background-color: var(--oscuro);
+    bottom: 0;
+    content: '';
+    height: 0.5vh;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    transition: all 0.2s;
+    width: 100%;
+}
+
+.navbar li a:hover::after{
+    opacity: 1;
+}
+
+@media screen and (min-width:1024px){
+    .navbar li a{
+        font-size: 1.6vw;
+    }
+}

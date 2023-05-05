@@ -1,0 +1,72 @@
+.avatar{
+    height: 100%;
+    margin-left: calc((100% / 2) - ((100% / 5) / 2));
+    width: calc(100% / 5);
+}
+
+
+/*Banner degradado*/
+.banner{
+    background: linear-gradient(var(--oscuro), var(--claro));
+    margin-top: 2vh;
+}
+
+.descripcion{
+    font-size: 2.1vw;
+    padding: 1%;
+}
+
+/*Sección Presentación*/
+
+.presentacion{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.saludo {
+    display: flex;
+    font-size: calc(1.1vw + .5rem);
+    justify-content: center;
+    position: relative;
+}
+
+.saludo span{
+    background: white;
+    position: absolute;
+    right: 0;
+    width: 0;
+}
+
+.saludo span:first-child{
+    animation: barrido 1.2s alternate steps(34);
+}
+
+.saludo span:nth-child(2n){
+    animation: barrido 1.2s alternate steps(49);
+}
+
+@keyframes barrido {
+    from {
+        width: 100%;
+    }
+    to {
+        width: 0;
+    }
+}
+
+/*Título sección*/
+.titulo{
+    font-size: calc(1.5vw + .5rem);
+    padding: 2%;
+    text-align: center;
+}
+
+/*Estilo texto dentro de Banner*/
+.titulo span, .descripcion span{
+    align-self: center;
+    color: white;
+    display: flex;
+    font-style: italic;
+    justify-content: center;
+}

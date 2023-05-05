@@ -1,0 +1,38 @@
+/*Banner degradado*/
+.banner{
+    background: linear-gradient(var(--oscuro), var(--claro));
+    margin-top: 2vh;
+}
+
+/*Título sección*/
+.titulo{
+    font-size: calc(1.5vw + .5rem);
+    padding: 2%;
+    text-align: center;
+}
+
+/*Estilo texto dentro de Banner*/
+.titulo span{
+    align-self: center;
+    color: white;
+    font-style: italic;
+}
+
+.postIndividual {
+    text-align: center;
+    width: 90%;
+    margin: 0 auto 0;
+}
+
+.postIndividual p , .contenidoPost {
+    font-size: calc(1.5vw + .5rem);
+}
+
+.imagen  {
+    width: calc(100vw / 4);
+    height: calc(100vw / 5);
+}
+
+.contenidoPost {
+    text-align: justify;
+}

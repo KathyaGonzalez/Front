@@ -1,0 +1,7 @@
+.mensaje {
+    display: flex;
+    font-size: calc(1vw + .5rem);
+    justify-content: center;
+    position: relative;
+    padding: 14%;
+}

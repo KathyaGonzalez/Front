@@ -1,0 +1,66 @@
+.tarjetaArticulo {
+    background-color: var(--tarjeta);
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.tarjetaArticulo:hover {
+    scale: 1.05;
+}
+
+.tarjetaArticulo div {
+    padding: 0px 10% 5%;
+}
+
+.tarjetaArticulo img {
+    width: 100%;
+}
+
+.tarjetaArticulo div p {
+    font-size: .7em;
+    color: var(--medio);
+    text-align: center;
+}
+
+.tarjetaArticulo div h3 {
+    font-size: .9em;
+    text-align: center;
+}
+
+.contenedorTarjetasPost {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10%;
+    justify-content: center;
+    margin: 2%;
+}
+
+.contenedorTarjetasPost a{
+    text-decoration: none;
+    margin-bottom: 10%;
+}
+
+@media screen and (max-width:480px) {
+    .contenedorTarjetasPost a{
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width:768px) {
+    .contenedorTarjetasPost a{
+        width: 45%;
+    }
+}
+
+@media screen and  (min-width:768px) and (max-width:1024px) {
+    .contenedorTarjetasPost a{
+        width: 30%;
+    }
+}
+
+@media screen and (min-width:1024px) and (max-width:1200px) {
+    .contenedorTarjetasPost a{
+        width: 20%;
+    }
+}

@@ -1,0 +1,19 @@
+/*Banner degradado*/
+.banner{
+    background: linear-gradient(var(--oscuro), var(--claro));
+    margin-top: 2vh;
+}
+
+/*Título sección*/
+.titulo{
+    font-size: calc(1.5vw + .5rem);
+    padding: 2%;
+    text-align: center;
+}
+
+/*Estilo texto dentro de Banner*/
+.titulo span{
+    align-self: center;
+    color: white;
+    font-style: italic;
+}
