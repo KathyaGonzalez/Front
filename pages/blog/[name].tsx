@@ -2,9 +2,13 @@ import Footer from '../Footer'
 import Header from '../Header'
 import styles from '@/styles/PostIndividual.module.css'
 import Image from "next/image"
-import { formatearFecha } from '../funcion/formatearFecha'
 import ReactMarkdown from 'react-markdown'
 import axios from 'axios'
+
+const formatearFecha = (date: string) => {
+  const  newDate = new Date(date);
+  return newDate.toLocaleDateString('en-US');
+}
 
 const PostIndividual = ({articuloIndividual}: any) => {
     const {tittle, content, createdAt} = articuloIndividual;
