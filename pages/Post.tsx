@@ -1,7 +1,11 @@
 import Image from "next/image"
 import styles from "../styles/Post.module.css"
 import Link from "next/link"
-import { formatearFecha } from "./funcion/formatearFecha"
+
+const formatearFecha = (date: string) => {
+    const  newDate = new Date(date);
+    return newDate.toLocaleDateString('en-US');
+}
 
 interface Props {
     _id: string,
